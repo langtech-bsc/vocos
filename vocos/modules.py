@@ -191,13 +191,14 @@ class ResBlock1(nn.Module):
         return int((kernel_size * dilation - dilation) / 2)
 
 
-def safe_log(x: torch.Tensor, clip_val: float = 1e-7) -> torch.Tensor:
+def safe_log(x: torch.Tensor, clip_val: float = 1e-5) -> torch.Tensor:
     """
     Computes the element-wise logarithm of the input tensor with clipping to avoid near-zero values.
 
     Args:
         x (Tensor): Input tensor.
-        clip_val (float, optional): Minimum value to clip the input tensor. Defaults to 1e-7.
+        clip_val (float, optional): Minimum value to clip the input tensor. Defaults to 1e-5 to 
+        match Hifigan https://github.com/jik876/hifi-gan/blob/master/meldataset.py.
 
     Returns:
         Tensor: Element-wise logarithm of the input tensor with clipping applied.
