@@ -55,7 +55,7 @@ y_hat = vocos(y)
 
 ### Integrate with [Matcha]() text-to-speech model
 
-See [example notebook](notebooks%2FBark%2BVocos.ipynb).
+See [example notebook](notebooks/matcha_inference.ipynb).
 
 ## Pre-trained models
 

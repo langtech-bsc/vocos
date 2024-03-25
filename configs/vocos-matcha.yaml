@@ -68,7 +68,7 @@ trainer:
   logger:
     class_path: pytorch_lightning.loggers.TensorBoardLogger
     init_args:
-      save_dir: /mnt/netapp1/Proxecto_NOS/bsc/speech/TTS/outputs/logs/vocos
+      save_dir: ???
   callbacks:
     - class_path: pytorch_lightning.callbacks.LearningRateMonitor
     - class_path: pytorch_lightning.callbacks.ModelSummary
