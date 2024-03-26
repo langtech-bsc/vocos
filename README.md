@@ -53,15 +53,16 @@ y_hat = vocos(y)
 ```
 
 
-### Integrate with [Matcha]() text-to-speech model
+### Integrate with [Matcha](https://github.com/shivammehta25/Matcha-TTS) text-to-speech model
 
 See [example notebook](notebooks/matcha_inference.ipynb).
 
 ## Pre-trained models
 
-| Model Name                                                                          | Dataset       | Training Iterations | Parameters 
-|-------------------------------------------------------------------------------------|---------------|-------------------|------------|
-| [BSC-LT/vocos-mel-22khz](https://huggingface.co/BSC-LT/vocos-mel-22khz)         | LibriTTS + LJSpeech + openslr69 + festcat      | 1.8M                | 13.5M
+| Model Name                                                             | Dataset       | Training Iterations | Parameters 
+|------------------------------------------------------------------------|---------------|-------------------|------------|
+| [BSC-LT/vocos-mel-22khz](https://huggingface.co/BSC-LT/vocos-mel-22khz)| LibriTTS + LJSpeech + openslr69 + festcat | 1.8M | 13.5M |
+| [BSC-LT/vocos-mel-22khz-cat](https://huggingface.co/BSC-LT/vocos-mel-22khz-cat)| openslr69 + festcat lafresca | 1.5M | 13.5M
 
 ## Training
 
